@@ -45,7 +45,7 @@ def index():
 def cipher():
   rots = int(request.form['rot'])
   msg = request.form['text']
-  #e_msg = encrypt(msg, rots)
+  
   return form.format(encrypt(msg, rots))
 
 app.run()  
